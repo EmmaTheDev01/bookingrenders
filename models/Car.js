@@ -17,7 +17,7 @@ const CarSchema = new mongoose.Schema(
     },
     
     condition: {
-      type: Number,
+      type: String,
       required: true,
     },
     photo: {

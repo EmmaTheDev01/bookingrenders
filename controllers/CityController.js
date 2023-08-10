@@ -65,7 +65,7 @@ export const findAllCities = async (req, res) => {
 
     const page = parseInt(req.query.page);
     try {
-        const allCitys = await City.find({}).skip(page * 8).limit(8);
+        const allCitys = await City.find({}).skip(page * 9).limit(9);
         res.status(200).json({
             success: true,
             count: allCitys.length,
